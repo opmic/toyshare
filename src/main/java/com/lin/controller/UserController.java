@@ -27,4 +27,10 @@ public class UserController {
 	    mav.addObject("user", user); 
         return mav;  
     }  
+	
+	@RequestMapping("/caro")  
+    public ModelAndView caro(){    
+		ModelAndView mav = new ModelAndView("carousal"); 
+        return mav;  
+    }  
 }
